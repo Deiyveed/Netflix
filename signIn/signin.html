@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../assets/images/netflix_favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="../bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="/signIn/css/signin.css">
+    <link rel="stylesheet" href="./assets/fonts/NetflixSans_W_Rg.woff2">
+    <link rel="stylesheet" href="https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff2">
+    <script src="../bootstrap/bootstrap.bundle.min.js"></script>
+
+    <title>Netflix</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="hero-section">
+            <header class="hero-section-header px-5">
+                <span>
+                    <a href="../index.html"><img src="../assets/images/netflix_official_logo_icon.svg"
+                            alt="netflix_official_logo_icon logo icon"></a>
+                </span>
+
+                <span class="mx-2">
+                    <!-- <button type="submit">Sign In</button> -->
+                </span>
+            </header>
+
+            <div class="hero-section-text-wrapper">
+                <div class="hero-section-text">
+                    <h2 class="pb-4">Sign In</h2>
+                    <form action="../whosWatching/watching.html" method="get" class="was-validated">
+                        <div class="input">
+                            <div>
+                                <input class="form-control" type="email" name="email" id="email"
+                                    placeholder="Email or phone number" required>
+                                <!-- <div class="valid-feedback">Valid.</div> -->
+                                <div class="invalid-feedback">Please enter a valid email or phone number.</div>
+                            </div>
+                            <div>
+                                <input class="form-control mt-2" type="password" name="pwd" id="password"
+                                    placeholder="Password" minlength="8" required>
+                                <!-- <div class="valid-feedback">Valid.</div> -->
+                                <div class="invalid-feedback">Your password must contain between 4 and 60 characters.</div>
+                            </div>
+                        </div>
+
+                        <div class="btn-part">
+                            <button type="submit">Sign In</button>
+                            <div class="d-flex justify-content-between align-content-center mt-3 btn-part-text">
+                                <div><input type="checkbox" name="rem" id="rem">
+                                    <label for="rem">Remember me</label>
+                                </div>
+                                <p class="px-2">Need help?</p>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="last-part">
+                        <p id="first-paragraph">New to Netflix? <a href="#">Sign up now</a></p>
+                        <p id="second-paragraph">This page is protected by Google reCAPTCHA to ensure you're not a bot.
+                            <a href="#">Learn
+                                more.</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <hr class="hor-rule">
+            <div class="footer-section">
+                <footer class="">
+                    <div class="mb-4">
+                        <h6><a href="#">Questions? Contact us</a></h6>
+                    </div>
+
+                    <ul class="footer-links p-0">
+                        <li class="footer-links-item"><a href="#">FAQ</a></li>
+                        <li class="footer-links-item"><a href="#">Help Center</a></li>
+                        <li class="footer-links-item"><a href="#">Terms of Use</a></li>
+                        <li class="footer-links-item"><a href="#">Privacy</a></li>
+                        <li class="footer-links-item"><a href="#">Cookie Preferences</a></li>
+                        <li class="footer-links-item"><a href="#">Corporate Information</a></li>
+                    </ul>
+                </footer>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="../js/signIn.js"></script>
+</html>
